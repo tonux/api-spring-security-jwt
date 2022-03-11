@@ -34,7 +34,7 @@ public class BookService {
         //Rest client to send book to kafka
         
 
-        kafkaTemplate.send(TOPIC, book);
+        // kafkaTemplate.send(TOPIC, book);
         logger.info(String.format("#### -> Producing message -> %s", book));
         return book;
     }
